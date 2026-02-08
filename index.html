@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Shoes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="fade">
+  <h1 id="shop-name">SMART SHOES 👟</h1>
+  <p id="tagline">welcome all prices are cheaper than you expect</p>
+  <p id="location">📍 Silibwet Market, near Lalet Supermarket</p>
+</header>
+
+<!-- SHOES SECTION -->
+<section class="section slide">
+  <h2>👟 Shoes</h2>
+  <div class="list">
+    <div class="item" onclick="order('Sneakers',2500)">Sneakers <span>KES 2,500</span></div>
+    <div class="item" onclick="order('Official Shoes',3000)">Official Shoes <span>KES 3,000</span></div>
+    <div class="item" onclick="order('Boots',3500)">Boots <span>KES 3,500</span></div>
+    <div class="item" onclick="order('Sandals',1200)">Sandals <span>KES 1,200</span></div>
+    <div class="item" onclick="order('Slides',1000)">Slides <span>KES 1,000</span></div>
+    <div class="item" onclick="order('Heels',2800)">Heels <span>KES 2,800</span></div>
+    <div class="item" onclick="order('Kids Shoes',1500)">Kids Shoes <span>KES 1,500</span></div>
+  </div>
+</section>
+
+<!-- CLOTHES SECTION -->
+<section class="section slide">
+  <h2>👕 Clothes</h2>
+  <div class="list">
+    <div class="item" onclick="order('T-Shirt',800)">T-Shirt <span>KES 800</span></div>
+    <div class="item" onclick="order('Hoodie',1800)">Hoodie <span>KES 1,800</span></div>
+    <div class="item" onclick="order('Jeans',2000)">Jeans <span>KES 2,000</span></div>
+    <div class="item" onclick="order('Tracksuit',2500)">Tracksuit <span>KES 2,500</span></div>
+    <div class="item" onclick="order('Dress',2200)">Dress <span>KES 2,200</span></div>
+    <div class="item" onclick="order('Jacket',3000)">Jacket <span>KES 3,000</span></div>
+    <div class="item" onclick="order('Cap',500)">Cap <span>KES 500</span></div>
+    <div class="item" onclick="order('Socks',300)">Socks <span>KES 300</span></div>
+  </div>
+</section>
+
+<!-- ORDER FORM -->
+<section class="order-form fade">
+  <h2>📝 Place Your Order</h2>
+  <p>Pick the type of product and visit day</p>
+
+  <label for="category">Category:</label>
+  <select id="category" onchange="updateProducts()">
+    <option value="">-- Select Category --</option>
+    <option value="Shoes">Shoes</option>
+    <option value="Clothes">Clothes</option>
+  </select>
+
+  <label for="product-type">Product:</label>
+  <select id="product-type">
+    <option value="">-- Select Product --</option>
+  </select>
+
+  <label for="visit-day">📅 Visit Day:</label>
+  <input type="date" id="visit-day">
+
+  <button onclick="sendOrder()">💬 Chat on WhatsApp</button>
+</section>
+
+<!-- WHATSAPP BUTTON -->
+<a class="whatsapp-btn" href="https://wa.me/254112880923" target="_blank">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"> Chat with us
+</a>
+
+<!-- FOOTER -->
+<footer>
+  © 2026 Smart Shoes
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

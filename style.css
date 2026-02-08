@@ -1,0 +1,34 @@
+body { margin:0; font-family: Arial, sans-serif; background:#121212; color:#eee; }
+
+/* Header */
+#shop-name { text-align:center; font-size:28px; padding-top:20px; }
+#tagline,#location { text-align:center; font-size:14px; margin:5px 0; color:#aaa; }
+
+/* Sections */
+.section, .order-form { margin:20px 15px; padding:20px; background:#1f1f1f; border-radius:16px; }
+.section h2, .order-form h2 { text-align:center; margin-bottom:15px; }
+
+/* List items */
+.list { display:flex; flex-direction:column; gap:10px; }
+.item { display:flex; justify-content:space-between; padding:14px; border-radius:12px; background:#262626; cursor:pointer; transition:transform 0.2s; }
+.item span { color:#1f8f4d; font-weight:bold; }
+.item:active { transform:scale(0.97); }
+
+/* Order Form */
+.order-form label { display:block; margin-top:10px; margin-bottom:5px; }
+.order-form input, .order-form select { width:80%; padding:10px; border-radius:8px; border:none; margin-bottom:15px; }
+.order-form button { padding:14px 25px; border-radius:50px; background:#1f8f4d; color:#fff; border:none; cursor:pointer; font-weight:bold; font-size:16px; }
+.order-form button:active { transform:scale(0.97); }
+
+/* WhatsApp Button */
+.whatsapp-btn { position:fixed; bottom:20px; right:20px; display:flex; align-items:center; gap:10px; background:#1f8f4d; color:#fff; padding:14px 20px; border-radius:50px; text-decoration:none; font-weight:bold; }
+.whatsapp-btn img { width:26px; height:26px; }
+
+/* Footer */
+footer { text-align:center; padding:12px; background:#0b0b0b; font-size:13px; }
+
+/* Animations */
+.fade { animation:fade 1.2s ease; }
+.slide { animation:slide 1s ease; }
+@keyframes fade { from{opacity:0;} to{opacity:1;} }
+@keyframes slide { from{transform:translateY(20px); opacity:0;} to{transform:translateY(0); opacity:1;} }
